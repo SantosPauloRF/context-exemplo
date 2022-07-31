@@ -1,16 +1,15 @@
-import React from "react";
-import PaginaPrincipal from "./pages/PaginaPrincipal"
-import {useContextHook} from "./contexts/MeuContext"
+import MainPage from "./MainPage";
+import { useCountContext } from "./Context"
 
 function App() {
 
-  const {titulo} = useContextHook();
+  const {title} = useCountContext();
   
-  
+
   return (
     <div>
-     <h1>{titulo}</h1>
-     <PaginaPrincipal />
+      {title}
+      <MainPage />
     </div>
   );
 }

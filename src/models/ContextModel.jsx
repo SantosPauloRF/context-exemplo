@@ -2,7 +2,7 @@ import {useContext, createContext} from 'react'
 
 const myContext = createContext();  // Inicializing context
 
-const useCustomContextHook = () => {  // Creating a custom hook to use context. Will return the actual useContext hook with the created context inside
+const useCustomContextHook = () => {  // Creatin a custom hook to use context. Will return the actual useContext hook with the created context inside
     return useContext(myContext)
 };
 
